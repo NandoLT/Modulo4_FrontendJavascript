@@ -1,11 +1,9 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
 
 /**
-* Loader
+* Loader - Error Notifier
 */
-
-.lds-dual-ring {
-
+.lds-dual-ring, .error-notifier {
     display: block;
     position: fixed;
     z-index: 1;
@@ -14,9 +12,8 @@
     overflow: auto;
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.6);
-
 }
-.lds-dual-ring.hidden {
+.lds-dual-ring.hidden, .error-notifier.hidden {
     display: none;
 }
 .lds-dual-ring:after {
@@ -39,6 +36,13 @@
     transform: rotate(360deg);
     }
 }
+/**Error Notifier**/
+.error-notifier article.message.is-danger {
+    position: relative;
+    width: 70%;
+    top: 40%;
+    left: 15%;
+}
 
 /**
 * INDEX
@@ -46,8 +50,6 @@
 .container {
     padding: 10px 20px 10px 20px;
 }
-
-
 /** products **/
 .products-list{
     display: flex;
