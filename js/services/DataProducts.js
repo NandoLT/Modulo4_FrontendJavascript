@@ -1,5 +1,4 @@
-const url = 'https://gist.githubusercontent.com/NandoLT/6865bc61e7424d17ebe6ef691155538b/raw/39a4e1fa92f64d2a3bb42368bcf4ca3d8fe1eb56/products.json'
-
+const url = 'https://gist.githubusercontent.com/NandoLT/6865bc61e7424d17ebe6ef691155538b/raw/6a2345e685d1c3b9f95e84ee45e0ab3dbbf41562/products.json'
 export default {
     
     getProducts: async function() {
