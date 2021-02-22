@@ -26,7 +26,6 @@ export default class ProductListController extends BaseController {
         this.loader.showLoading()
         try {
             const products =  await DataProducts.getProducts()
-            console.log(products)
             this.renderProducts(products)
         } catch (error) {
             //avisaDelError(error)
