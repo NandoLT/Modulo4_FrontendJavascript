@@ -4,7 +4,7 @@ import BaseController from '../controllers/BaseController.js'
 
 
 window.addEventListener('DOMContentLoaded', async (event) => {
-    const elementLoader = document.querySelector('.lds-roller')
+    const elementLoader = document.querySelector('.lds-dual-ring')
     const loaderController = new LoaderController(elementLoader)
     
 
