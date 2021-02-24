@@ -1,9 +1,16 @@
-import BaseController from './BaseController.js'
+/* import BaseController from './BaseController.js' */
 import DataUsers from '../services/DataUsers.js'
+import RegisterFormController from '../controllers/RegisterFormController.js'
 
-export default class RegisterFormController extends BaseController {
-
-    constructor(element) {
+export default class LoginFormController extends /* BaseController  */RegisterFormController  {
+    async makePost(user) {
+        //TODO si el usuario esa autenticado y entra en login redirigir a index
+        const data = await DataUsers.loginUser(user)
+        console.log('USUARIO en la BD', data)
+        DataUsers.saveToken(data.accessToken)
+        window.location.href = '/'
+    }
+    /* constructor(element) {
         super(element)
         this.attachEventListener()
         this.getFocus()
@@ -17,15 +24,6 @@ export default class RegisterFormController extends BaseController {
         focusEmail.focus()
     }
 
-    async makePost(user) {
-        console.log('METODO EN REGISTERFORM')
-        const data = await DataUsers.registerUser(user)
-        this.publish(this.events.USER_SUCCES)
-        setTimeout(() => {
-            window.location.href = '/login.html'
-        }, 3000) 
-    }
-
     attachEventListener() {
         this.element.addEventListener('submit', async (event) => {
             event.preventDefault()
@@ -36,13 +34,12 @@ export default class RegisterFormController extends BaseController {
         
             this.publish(this.events.START_LOADING, {})
             try {
-                await this.makePost(user)
-                /* const data =  await DataUsers.registerUSer(user)
-                await  this.makePost(user)
+                const data =  await DataUsers.loginUser(user)
+                console.log('LOGIN OK', data)
                 this.publish(this.events.USER_SUCCES)
                 setTimeout(() => {
                     window.location.href = '/login.html'
-                }, 3000) */ 
+                }, 3000) 
             } catch (error) {
                 console.log(error)
                 this.publish(this.events.ERROR, error)
@@ -76,5 +73,5 @@ export default class RegisterFormController extends BaseController {
                 }
             })
         })
-    }
+    } */
 }

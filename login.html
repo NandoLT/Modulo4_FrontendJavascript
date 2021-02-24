@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodepop 2.0</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link rel="stylesheet" href="css/npop_styles.css">
+</head>
+<body>
+    <div class="lds-dual-ring hidden"></div>
+    <div class="error-notifier hidden"></div>
+    <div class="register-succes hidden"></div>
+
+    
+    <div class="container">
+        <h3 class="title is-3">
+            <i class="fas fa-user"></i>
+            Acceso Usuario Registrado
+        </h3>
+        <hr>
+    </div>
+    <div class="container columns">
+        <form class="column  register-form is-half is-offset-one-quarter" novalidate>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input email-register" type="email" placeholder="Email" name="email" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check check-email"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input password-register" type="password" placeholder="Password" name="password" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check check-password"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field btn-submit">
+                    <button class="button is-info" disabled>
+                    Login
+                    </button>   
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="js/initializers/login.js"></script>
+</body>
+</html>
