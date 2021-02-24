@@ -1,6 +1,7 @@
-import ProductListController from '../controllers/ProductListController.js'
 import LoaderController from '../controllers/LoaderController.js'
 import ErrorController from '../controllers/ErrorController.js'
+import RegisterFormController from '../controllers/RegisterFormController.js'
+import SuccesController from '../controllers/SuccesController.js'
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const elementLoader = document.querySelector('.lds-dual-ring')
@@ -9,12 +10,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const errorElement = document.querySelector('.error-notifier')
     new ErrorController(errorElement)
 
-    const elementProducts = document.querySelector('.products-list')
-    const productController = new ProductListController(elementProducts)
-    productController.loadProducts() 
+    const succesElement = document.querySelector('.register-succes')
+    new SuccesController(succesElement)
+
+    const registerElement = document.querySelector('form')
+    new RegisterFormController(registerElement)
 })
-
-
-
-
-// TODO controladors para cargar el html básico de cada página indexController(por ejemplo)

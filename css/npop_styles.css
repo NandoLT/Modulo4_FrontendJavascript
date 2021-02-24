@@ -13,7 +13,9 @@
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.6);
 }
-.lds-dual-ring.hidden, .error-notifier.hidden {
+.lds-dual-ring.hidden, 
+.error-notifier.hidden, 
+.register-succes.hidden {
     display: none;
 }
 .lds-dual-ring:after {
@@ -72,3 +74,16 @@ article:hover img.image-product{
     width: 95%;
     transition: 0.5s;
 }
+.notification.is-info{
+    text-align: center;
+}
+
+
+/**
+* REGISTER
+**/
+form.register-form .btn-submit {
+    text-align: center;
+}
+
+

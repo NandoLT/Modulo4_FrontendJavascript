@@ -1,5 +1,10 @@
 export const productView = (product) => {
-    return `<div class="card">
+    if(product == null) {
+        return `<div class="notification is-info">
+                    <strong class="title">Actualmente no tenemos productos en NODEPOP</strong>
+                </div>`
+    } else {
+        return `<div class="card">
                 <div class="card-image">
                 <figure class="image is-256x256">
                     <img class="image-product" src="https://bulma.io/images/placeholders/256x256.png">
@@ -17,6 +22,8 @@ export const productView = (product) => {
                     </div>
                 </div>
             </div>`
+    }
+    
 }
 
 export const tagsView = (tag) => {

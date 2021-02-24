@@ -9,8 +9,9 @@ export default class BaseController {
             START_LOADING: 'startLoading',
             FINISH_LOADING: 'finishLoading',
             ERROR: 'error', 
-            SEARCH: 'search',
-            TWEET_DELETED: 'tweetDeleted'
+            USER_SUCCES: 'userSucces'
+            /* SEARCH: 'search',
+            PRODUCT_DELETED: 'productDeleted' */
         }
     }
 
@@ -21,5 +22,4 @@ export default class BaseController {
     publish(eventName, eventData) {
         this.pubSub.publish(eventName, eventData)
     }
-
 }
