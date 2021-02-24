@@ -1,0 +1,42 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+
+html, body.not-found {
+    background-color: #26292E;
+    color: #2E2F30;
+    font-family: sans-serif;
+    margin: 0;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #e74c3c;
+}
+.dialog {
+    float:right;
+    text-align: left;
+    width: 60%;
+    margin: 5% auto 0;
+}
+.title, .subtitle { 
+    color: #fff;
+    line-height: 2em;
+}
+.image {
+    position: absolute;
+    float: left;
+    top: 0;
+    width:60%;
+}
+@media only screen and (max-width: 767px) {
+    .image {
+        width: 100%;
+        top: -50px;
+    }
+    .dialog {
+        float:none;
+        text-align: center;
+        width: 90%;
+        margin-top: 70%
+    }
+}  

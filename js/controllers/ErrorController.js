@@ -1,12 +1,17 @@
 import BaseController from './BaseController.js'
 import {errorView} from '../views/errorView.js'
 
-
 export default class ErrorController extends BaseController {
 
-    showError(error) {
-        this.element.innerHTML = errorView(error)
-        this.element.classList.remove('hidden')
+    constructor(element) {
+        super(element)
+        this.attachEventListener()
+        this.subscribe(this.events.ERROR, (error) => {
+            this.showError(error)
+        })
+    }
+
+    attachEventListener() {
         this.element.addEventListener('click', (event) => {
             if(event.target == this.element || event.target.classList.contains('delete')) {
                 this.element.classList.add('hidden')
@@ -18,4 +23,15 @@ export default class ErrorController extends BaseController {
             }
         })
     }
-}
+
+    showError(error) {
+        if(error.status === 404) {
+            window.location.href = '/404.html'
+        } else {
+            this.element.innerHTML = errorView(error)
+            this.element.classList.remove('hidden')
+            this.attachEventListener()
+        }
+        
+    }
+}   
