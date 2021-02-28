@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "name": "Fire TV Stick",
+      "description": " El Fire TV Stick Lite incluye todo lo esencial para que lo configures y empieces a ver contenido sin complicaciones. Y con un 50 % más de potencia respecto al Fire TV Stick del 2019, el Fire TV Stick Lite ofrece una ejecución de apps veloz y una reproducción en streaming rápida con calidad Full HD",
+      "type": "Buy",
+      "price": "35.45",
+      "tags": [
+        "Geek",
+        "Techno"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614542341055.jpg",
+      "userId": 26,
+      "updatedAt": "2021-02-28T19:59:01.073Z",
+      "id": 1
+    },
+    {
+      "name": "Echo Dot",
+      "description": "Completa cualquier habitación con Alexa. Nuestro altavoz inteligente más vendido tiene un diseño elegante y compacto que resulta ideal para espacios pequeños. Ofrece un sonido de calidad, con voces claras y graves equilibrados, que puedes disfrutar en cualquier lugar de la casa.                    ",
+      "type": "Buy",
+      "price": "59.98",
+      "tags": [
+        "Alexa",
+        "Geek"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614542393857.jpg",
+      "userId": 26,
+      "updatedAt": "2021-02-28T19:59:53.871Z",
+      "id": 2
+    },
+    {
+      "name": "Cecotec Freidora Editada",
+      "description": "EDITADO Cecofry Compact Rapid es una freidora dietética que cocina los alimentos simplemente con una cucharada de aceite. Podrás comer más sano y sabroso, respetando al máximo las propiedades de tus platos favoritos.\n                        \n                        ",
+      "price": "167.98",
+      "tags": [
+        "Cecotec",
+        "FritangaEdited",
+        "Truñito"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614545804023.jpg",
+      "type": "Buy",
+      "id": 3,
+      "userId": 26,
+      "updatedAt": "2021-02-28T20:56:44.037Z"
+    },
+    {
+      "name": "Brita Maxtra",
+      "description": "  El agua filtrada gracias a BRITA MAXTRA+ reduce la dureza del agua ofreciendo un sabor fresco y no deja rastros de cloro en el té o el café.\nAhora no tienes que cargar con envases pesados de agua embotellada. El filtro de agua BRITA ofrece una alternativa cómoda, rentable y respetuosa con el medio ambiente en relación a las botellas desechables.                  ",
+      "type": "Sell",
+      "price": "35.98",
+      "tags": [
+        "Healthy",
+        "Aguita"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614542528593.jpg",
+      "userId": 26,
+      "updatedAt": "2021-02-28T20:02:08.607Z",
+      "id": 4
+    },
+    {
+      "name": "Cecotec Robot Aspirador",
+      "description": "El robot aspirador conga 1590 active cuenta con la tecnología 4 en 1 para barrer, aspirar, fregar y pasar la mopa de forma simultánea; cuenta con hasta 1400 pascales de presión de succión, cepillo central multifunción, dos cepillos laterales, programación horaria, modo especial para alfombras, 3 niveles de potencía de succión, 3 niveles de caudal de agua y 10 modos de limpieza (auto, área, random, gyro, manual, twice, scrubbing, bordes, turbo clean carpet y vuelta a casa); este modelo también friega, cuenta con depósito mixto con control electrónico para sólidos y líquidos y mopa bimaterial para realizar una limpieza en modo fregado del hogar con acabado profesional, pudiendo adaptar el caudal de agua al tipo de suelo en cada circunstancia; este robot destaca por contar con aplicación móvil que muestra el mapa para que el usuario pueda realizar la limpieza de su hogar desde el móvil, pudiendo interactuar de forma total con el robot; también podrá observar el mapa de su hogar a medida que va limpiando, seleccionar el modo de limpieza, la programación, consultar el historial además, cuenta con los asistentes virtuales google assistant y alexa, para poder realizar un control mediante la voz del robot; este robot aspirador cuenta con la tecnología bestfriend care, incluye un cepillo intercambiable de silicona especial para eliminar el pelo de mascota y la tecnología total surface para limpiar toda la superficie de tu hogar sin importar lo grande que esta sea; al quedarse sin batería, el robot vuelve a su base de carga, se recarga y vuelve a continuar la limpieza por el punto concreto donde se había quedado; incluye tanque mixto, cepillo multifunción y mopa.                    ",
+      "type": "Buy",
+      "price": "146.37",
+      "tags": [
+        "Limpieza",
+        "Cecotec"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614542641913.jpg",
+      "userId": 26,
+      "updatedAt": "2021-02-28T20:04:01.927Z",
+      "id": 5
+    },
+    {
+      "name": "Xiaomi Band 5",
+      "description": "La nueva Xiaomi Mi Band 5 es un modelo económico que no renuncia a características importantes como la pantalla OLED a color de 1,1 pulgadas de tamaño que tiene unas dimensiones de 126 x 294 píxeles. Tiene un diseño con un 20% más de contenido que en el modelo anterior y se puede utilizar con diferentes correas intercambiables. Tiene unas dimensiones de 47,2 x 18,5 x 12,4 mm y un peso que varía en función de si tiene o no NFC. En el caso de que prescinda de él, el peso es de 11,9 gramos, mientras que en caso de que sí tenga NFC, pesa 12,1 gramos. Es una pulsera que es compatible tanto con dispositivos Android como terminales con sistema operativo iOS (Apple). En su interior cuenta con una memoria de 512 KB RAM y 16 MB.                    ",
+      "type": "Sell",
+      "price": "35.45",
+      "tags": [
+        "Xiaomer",
+        "geek"
+      ],
+      "image": "http://127.0.0.1:8000//file-1614542810059.jpg",
+      "userId": 27,
+      "updatedAt": "2021-02-28T20:06:50.071Z",
+      "id": 6
+    },
+    {
+      "name": "TP-Link - Cámara IP WiFi 360º",
+      "description": "Seguro, inteligente, fácil; mira lo que más importa; cámara wi-fi de seguridad para el hogar pan / tilt tp-link tapo c200; especificacionestamaño: 86. 6 x 85 x 117. 7 mmaplicación: ios y android (ios 9+, android 4. 4+)tarjeta tf (no incluido): hasta 128 gbview range: 360° horizontal, 114° verticalresolución: 1080full hdvisión nocturna: 850 nm ir led hasta 9 metroswifi lan frecuencia: 2. 4ghz, cifrado wpa2, ieee802. 11/ g / npaquete1; cámara wi-fi de seguridad para casa tapo12; adaptador de corriente 13; guía de empiezo rápido14; tornillos de montaje 15; plato de montaje 16; base de cámara 1.                    ",
+      "type": "Buy",
+      "price": "200",
+      "tags": [],
+      "image": "http://127.0.0.1:8000//file-1614542869897.jpg",
+      "userId": 27,
+      "updatedAt": "2021-02-28T20:07:49.910Z",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "username": "leonlc@hotmail.com",
+      "password": "$2b$10$JrLqOEgiP7bHU7ejJqol6.iKyG/RM6VRa8gmiNBd9nwQy3oqeBPTe",
+      "id": 26
+    },
+    {
+      "username": "veronica1985@gmail.com",
+      "password": "$2b$10$tIv.h146O8R3SfIO8wFCteqouUQ19vh6RF7FUjTVhTUttCQgwjnhW",
+      "id": 27
+    }
+  ]
+}
