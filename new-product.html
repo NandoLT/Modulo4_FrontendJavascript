@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodepop 2.0</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link rel="stylesheet" href="css/npop_styles.css">
+</head>
+<body>
+    <div class="lds-dual-ring"></div>
+    <div class="error-notifier hidden"></div>
+    <!-- NavBar Menu-->
+    <header class="header-menu">
+    </header>
+    <!-- End NavBar Menu-->
+    <div class="container">
+        <h3 class="title is-3">
+            <i class="far fa-plus-square"></i>
+            Crear Nuevo producto
+        </h3>
+        <hr>
+    </div>
+
+    <div class="container columns new-product">
+        <form action="" class="column  new-producct-form is-half is-offset-one-quarter" novalidate>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input product-name" type="text" placeholder="Product Name" name="name" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-right">
+                    <textarea class="textarea has-fixed-size" name="description" placeholder="Product Description..." required>
+                    </textarea>
+                </p>
+            </div>
+            <div class="field tags-field">
+            </div>
+            <div class="field">
+                <button type="button" class="button is-info is-medium is-fullwidth buttonAddTag"><i class="fas fa-tags"></i>  &nbsp;&nbsp;&nbsp;Añadir Tag</button>
+            </div> 
+            <div class="select">
+                <select class="type-option" name="optionsType" required>
+                    <option value="">Select Option</option>
+                    <option value="Buy">Buy</option>
+                    <option value="Sell">Sell</option>
+                </select>
+            </div>
+            <div class="file has-name is-pulled-right">
+                <label class="file-label">
+                    <input class="file-input" type="file" name="image" accept="image/*">
+                    <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                        Select File…
+                    </span>
+                    </span>
+                    <span class="file-name"></span>
+                    </label>
+            </div>
+            <div class="field price is-pulled-right">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input product-price" type="number" step="any" placeholder="Price" name="price" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-euro-sign"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field btn-submit">
+                <button class="button is-info button-submit" disabled>
+                Crear Producto
+                </button>   
+            </div>
+        </form>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+    </footer>
+    <!-- End Footer-->
+    <script type="module" src="js/initializers/newProduct.js"></script>
+    <script type="module" src="js/initializers/menuAndFooter.js"></script>
+</body>
+</html>

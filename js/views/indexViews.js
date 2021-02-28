@@ -1,14 +1,18 @@
-export const productView = (product) => {
+export const productView = (product) => {    
     if(product == null) {
         return `<div class="notification is-info">
                     <strong class="title">Actualmente no tenemos productos en NODEPOP</strong>
                 </div>`
     } else {
+        let imgHTML = ''
+        if(product.image) {
+            imgHTML = `<figure class="image is-256x256">
+                            <img class="image-product" src="${product.image}">
+                        </figure>`
+        } 
         return `<div class="card">
                 <div class="card-image">
-                <figure class="image is-256x256">
-                    <img class="image-product" src="https://bulma.io/images/placeholders/256x256.png">
-                </figure>
+                ${imgHTML}
                 </div>
                 <div class="card-content">
                     <div class="media">
@@ -19,6 +23,9 @@ export const productView = (product) => {
                         </div>
                     </div>
                     <div class="content-tags">
+                    </div>
+                    <div class="btn-detail">
+                        <a href="/product-detail.html?id=${product.id}" class="button is-info is-medium is-fullwidth">Ver Más</a>
                     </div>
                 </div>
             </div>`

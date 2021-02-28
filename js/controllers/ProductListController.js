@@ -26,13 +26,19 @@ export default class ProductListController extends BaseController {
                 this.drawTags(product)
             }
         }
-        
     }
 
     async loadProducts() {
+        const URLparts = window.location.href.split('?')
+        let queryURL
+        if(URLparts.length > 0) {
+            queryURL = `${URLparts[1]}`
+        } else {
+            queryURL = null
+        }
         this.publish(this.events.START_LOADING, {})
         try {
-            const products =  await DataProducts.getProducts()
+            const products =  await DataProducts.getProducts(queryURL)
             if(products.length == 0) {
                 this.renderProducts()
             } else {

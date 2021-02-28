@@ -1,4 +1,5 @@
 import pubSub from '../services/Pubsub.js'
+import DataUsers from '../services/DataUsers.js'
 
 export default class BaseController {
 
@@ -10,8 +11,6 @@ export default class BaseController {
             FINISH_LOADING: 'finishLoading',
             ERROR: 'error', 
             USER_SUCCES: 'userSucces'
-            /* SEARCH: 'search',
-            PRODUCT_DELETED: 'productDeleted' */
         }
     }
 
@@ -21,5 +20,16 @@ export default class BaseController {
 
     publish(eventName, eventData) {
         this.pubSub.publish(eventName, eventData)
+    }
+
+    async checkUserIsLogged() {
+        const isLogged = await DataUsers.isUserLogged()
+        if(!isLogged) {
+            DataUsers.saveUserActivity(window.location.href)
+            window.location.href = '/login.html'
+        } else {
+            this.publish(this.events.FINISH_LOADING)
+            //DataUsers.saveUserActivity(window.location.href)
+        }
     }
 }

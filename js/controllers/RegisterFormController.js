@@ -18,7 +18,6 @@ export default class RegisterFormController extends BaseController {
     }
 
     async makePost(user) {
-        console.log('METODO EN REGISTERFORM')
         const data = await DataUsers.registerUser(user)
         this.publish(this.events.USER_SUCCES)
         setTimeout(() => {
@@ -37,12 +36,6 @@ export default class RegisterFormController extends BaseController {
             this.publish(this.events.START_LOADING, {})
             try {
                 await this.makePost(user)
-                /* const data =  await DataUsers.registerUSer(user)
-                await  this.makePost(user)
-                this.publish(this.events.USER_SUCCES)
-                setTimeout(() => {
-                    window.location.href = '/login.html'
-                }, 3000) */ 
             } catch (error) {
                 console.log(error)
                 this.publish(this.events.ERROR, error)
@@ -53,9 +46,6 @@ export default class RegisterFormController extends BaseController {
 
         this.element.querySelectorAll('input').forEach((input) => {
             input.addEventListener('keyup',  (event) => {
-                //TODO controlar de alguna manera para que el check de los inputs pase a verde
-                //en caso de mail si es un amil correcto y password si cumple un regex
-                //botones de info a lado de la contraseña con caracteristicas de entrada para validad
                 if(input.validity.valid) {
                     if(input.classList.contains('email-register')) {
                         this.checkIconMail.style.color = 'green'

@@ -1,6 +1,6 @@
-import ProductListController from '../controllers/ProductListController.js'
 import LoaderController from '../controllers/LoaderController.js'
 import ErrorController from '../controllers/ErrorController.js'
+import NewProductController from '../controllers/NewProductController.js'
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const elementLoader = document.querySelector('.lds-dual-ring')
@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const errorElement = document.querySelector('.error-notifier')
     new ErrorController(errorElement)
 
-    const elementProducts = document.querySelector('.products-list')
-    const productController = new ProductListController(elementProducts)
-    productController.loadProducts() 
+    const formElement = document.querySelector('form')
+    new NewProductController(formElement)
 })
 
